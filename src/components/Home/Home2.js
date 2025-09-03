@@ -2,11 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
@@ -19,33 +15,36 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              My journey in tech started with curiosity and turned into a
+              passion. Today, I am a{" "}
+              <b className="purple">Software & Security Engineer</b> with strong
+              expertise in both{" "}
+              <b className="purple">development</b> and{" "}
+              <b className="purple">cybersecurity</b>.
               <br />
-              <br />I am fluent in classics like
+              <br />I am fluent in{" "}
               <i>
-                <b className="purple"> C# and Javascript. </b>
-              </i>
-              <br />
-              <br />
-              My field of Interest's are building new &nbsp;
+                <b className="purple"> C#, JavaScript, and .NET </b>
+              </i>{" "}
+              and experienced in frameworks like{" "}
               <i>
-                <b className="purple">Web Technologies and Products </b>
-              </i>
+                <b className="purple">React.js, Node.js, Angular</b>
+              </i>{" "}
+              along with{" "}
+              <b className="purple">MongoDB and SQL-based databases</b>.
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">.Net</b> and
+              My areas of interest include{" "}
               <i>
                 <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
+                  Web Technologies, Security Solutions, and Cloud Platforms
                 </b>
               </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js, Node.js and Angular.js</b>
-              </i>
+              . Whenever possible, I bring my passion into practice by building
+              secure applications and deploying enterprise-level security
+              controls with{" "}
+              <b className="purple">Trend Micro Vision One, Apex One,</b> and{" "}
+              <b className="purple">Email Inspector</b>.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
