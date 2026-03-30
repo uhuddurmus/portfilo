@@ -9,7 +9,7 @@ import ecom from "../../Assets/Projects/4.png";
 import weather from "../../Assets/Projects/5.png";
 import ProductList from "../../Assets/Projects/6.png";
 import Tailwind from "../../Assets/Projects/7.png";
-import PdfChatBot from "../../Assets/Projects/8.jpeg";
+import PdfChatBot from "../../Assets/Projects/8.png";
 
 function Projects() {
   return (
