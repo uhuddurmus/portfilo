@@ -9,6 +9,7 @@ import ecom from "../../Assets/Projects/4.png";
 import weather from "../../Assets/Projects/5.png";
 import ProductList from "../../Assets/Projects/6.png";
 import Tailwind from "../../Assets/Projects/7.png";
+import PdfChatBot from "../../Assets/Projects/8.jpeg";
 
 function Projects() {
   return (
@@ -89,6 +90,14 @@ function Projects() {
               title="coppywithtailwindcss"
               description="I recreated a website that originally used Bootstrap, but I redesigned it using Tailwind CSS."
               ghLink="https://github.com/uhuddurmus/coppywithtailwindcss"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={PdfChatBot}
+              title="PDF Chat Bot"
+              description="A local RAG application for chatting with multiple PDF files in the same session using LangChain, Ollama, DeepSeek-R1, and local embeddings."
+              ghLink="https://github.com/uhuddurmus/PDF-Chat-Bot"
             />
           </Col>
 
