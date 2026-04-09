@@ -9,14 +9,6 @@ import Toolstack from "./Toolstack";
 import { FaLinkedin } from "react-icons/fa";
 
 function About() {
-  const openLinkedIn = () => {
-    const newWindow = window.open(
-      "https://www.linkedin.com/in/uhud-mustafa-durmus/",
-      "_blank",
-      "noopener,noreferrer"
-    );
-    if (newWindow) newWindow.focus();
-  };
   return (
     <Container fluid className="about-section">
       <Particle />
@@ -39,22 +31,21 @@ function About() {
               <Col md="auto" className="text-center">
                 <p>
                   You can also see my certificates on{" "}
-                  <button
-                    onClick={openLinkedIn}
+                  <a
+                    href="https://www.linkedin.com/in/uhud-mustafa-durmus/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     style={{
                       color: "#0a66c2",
                       fontWeight: "bold",
                       textDecoration: "none",
-                      border: "none",
-                      background: "none",
-                      cursor: "pointer",
                     }}
                   >
                     <FaLinkedin
                       style={{ marginRight: "5px", verticalAlign: "middle" }}
                     />
                     LinkedIn
-                  </button>
+                  </a>
                 </p>
               </Col>
             </Row>

@@ -4,10 +4,11 @@ import { DiJavascript1, DiReact, DiNodejs, DiPython, DiGit, DiAngularSimple, DiA
 import { 
   SiPostgresql, SiDotnet, SiRedux, SiTypescript, SiBootstrap, 
   SiTailwindcss, SiMui, SiMongodb, SiExpress, SiNextdotjs, 
-  SiDocker, SiKubernetes, SiSharp
+  SiDocker, SiKubernetes, SiSharp, SiTrendmicro, SiPaloaltonetworks
 } from "react-icons/si";
-import { FaShieldAlt, FaNetworkWired } from "react-icons/fa";
+import { FaMicrosoft, FaNetworkWired, FaShieldAlt } from "react-icons/fa";
 import { VscAzure } from "react-icons/vsc";
+import StackCard from "./StackCard";
 
 function Techstack() {
   return (
@@ -36,6 +37,13 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons"><SiTailwindcss /></Col>
       <Col xs={4} md={2} className="tech-icons"><FaShieldAlt /></Col>
       <Col xs={4} md={2} className="tech-icons"><FaNetworkWired /></Col>
+      <StackCard icon={SiTrendmicro} label="Vision One" sublabel="Trend Micro" />
+      <StackCard icon={SiTrendmicro} label="Apex One" sublabel="Trend Micro" />
+      <StackCard icon={SiTrendmicro} label="Email Inspector" sublabel="Trend Micro" />
+      <StackCard icon={SiTrendmicro} label="Deep Discovery" sublabel="Trend Micro" />
+      <StackCard icon={SiPaloaltonetworks} label="Palo Alto" sublabel="Networks" />
+      <StackCard icon={FaMicrosoft} label="Exchange" sublabel="Microsoft" />
+      <StackCard icon={FaMicrosoft} label="Active Directory" sublabel="Microsoft" />
     </Row>
   );
 }

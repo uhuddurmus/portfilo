@@ -248,6 +248,8 @@ button:focus {
   background-size: cover !important;
   width: 100%;
   height: 100%;
+  pointer-events: none !important;
+  z-index: 0 !important;
 }
 
 .home-header {
@@ -260,14 +262,30 @@ button:focus {
   background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
   background-position: top center;
   background-repeat: no-repeat;
-  padding-bottom: 30px !important;
-  padding-top: 30px !important;
+  min-height: 100vh;
+  min-height: 100svh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding-top: 96px !important;
+  padding-bottom: 32px !important;
 }
 
 .home-content {
-  padding: 9rem 0 2rem !important;
+  width: 100%;
+  padding: 0 !important;
   color: whitesmoke;
   text-align: left;
+}
+
+.home-row {
+  min-height: calc(100vh - 128px);
+  min-height: calc(100svh - 128px);
+  align-items: center;
+}
+
+.home-header {
+  padding-top: 0 !important;
 }
 
 .heading {
@@ -295,6 +313,15 @@ button:focus {
 }
 
 @media (max-width: 767px) {
+  .home-section {
+    padding-top: 110px !important;
+    padding-bottom: 24px !important;
+  }
+
+  .home-row {
+    min-height: auto;
+  }
+
   .Typewriter__wrapper {
     font-size: 1.4em !important;
     font-weight: 500 !important;
@@ -550,6 +577,11 @@ button:focus {
   color: white !important;
 }
 
+.about-section > .container {
+  position: relative;
+  z-index: 1;
+}
+
 .tech-icons {
   font-size: 4.5em !important;
   margin: 15px !important;
@@ -575,6 +607,40 @@ button:focus {
   transform: scale(1.05) !important;
   overflow: hidden !important;
   border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+}
+
+.stack-card {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  min-height: 130px;
+}
+
+.stack-card-icon {
+  font-size: 1em;
+  line-height: 1;
+}
+
+.stack-card-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stack-card-label {
+  font-size: 0.24em;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.stack-card-sublabel {
+  font-size: 0.15em;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 .tech-icon-images {
   padding: 20px !important;
@@ -610,6 +676,33 @@ button:focus {
   color: white !important;
 }
 
+.certificate-section {
+  position: relative !important;
+  min-height: 100vh;
+  min-height: 100svh;
+  padding: 110px 24px 32px !important;
+  background-image: var(--section-background-color) !important;
+}
+
+.certificate-frame-wrap {
+  width: 100%;
+  height: calc(100vh - 142px);
+  height: calc(100svh - 142px);
+  padding: 14px;
+  border: 1px solid rgba(199, 112, 240, 0.25);
+  border-radius: 20px;
+  background: rgba(13, 8, 24, 0.78);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+}
+
+.certificate-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px;
+  background: white;
+}
+
 .resume {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -633,6 +726,17 @@ button:focus {
   .resume-right {
     padding-right: 15px !important;
     padding-left: 15px !important;
+  }
+
+  .certificate-section {
+    padding: 96px 12px 20px !important;
+  }
+
+  .certificate-frame-wrap {
+    height: calc(100vh - 116px);
+    height: calc(100svh - 116px);
+    padding: 10px;
+    border-radius: 14px;
   }
 }
 .resume .resume-title {
