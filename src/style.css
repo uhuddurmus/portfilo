@@ -676,6 +676,66 @@ button:focus {
   color: white !important;
 }
 
+.not-found-section {
+  min-height: 100vh;
+  min-height: 100svh;
+  padding: 120px 20px 40px !important;
+  background-image: var(--section-background-color) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.not-found-card {
+  width: min(100%, 560px);
+  padding: 48px 32px;
+  border: 1px solid rgba(200, 137, 230, 0.35);
+  border-radius: 24px;
+  background: rgba(18, 12, 33, 0.92);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: white;
+}
+
+.not-found-code {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--imp-text-color);
+}
+
+.not-found-title {
+  margin-bottom: 12px;
+  font-size: 2.2rem;
+}
+
+.not-found-text {
+  margin-bottom: 28px;
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.not-found-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 190px;
+  padding: 12px 24px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #934cce, #6d20c5);
+  color: white !important;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.not-found-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(147, 76, 206, 0.35);
+}
+
 .certificate-section {
   position: relative !important;
   min-height: 100vh;
