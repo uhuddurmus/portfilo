@@ -10,6 +10,7 @@ import weather from "../../Assets/Projects/5.png";
 import ProductList from "../../Assets/Projects/6.png";
 import Tailwind from "../../Assets/Projects/7.png";
 import PdfChatBot from "../../Assets/Projects/8.png";
+import crmLaptop from "../../Assets/Projects/crm-laptop.png";
 
 function Projects() {
   return (
@@ -98,6 +99,15 @@ function Projects() {
               title="PDF Chat Bot"
               description="A local RAG application for chatting with multiple PDF files in the same session using LangChain, Ollama, DeepSeek-R1, and local embeddings."
               ghLink="https://github.com/uhuddurmus/PDF-Chat-Bot"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={crmLaptop}
+              title="Fener CRM"
+              description="A company-internal CRM and ticketing platform with built-in chat, workflow tracking, and CI/CD deployment."
+              demoLink="https://crm.fenerteknoloji.com/"
             />
           </Col>
 
